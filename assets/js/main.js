@@ -1,0 +1,30 @@
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".nav-toggle");
+  const nav = document.querySelector(".site-nav");
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      const open = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(open));
+    });
+    nav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  document.querySelectorAll("[data-year]").forEach(el => {
+    el.textContent = new Date().getFullYear();
+  });
+
+  const demoForm = document.querySelector("[data-demo-form]");
+  if (demoForm) {
+    demoForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const status = demoForm.querySelector(".form-status");
+      status.textContent = "Formuläret är en lokal prototyp och skickar ännu inga uppgifter.";
+    });
+  }
+});
