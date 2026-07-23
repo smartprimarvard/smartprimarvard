@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://smartprimarvard.github.io/smartprimarvard/sitemap.xml
