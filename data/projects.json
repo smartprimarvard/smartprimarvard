@@ -1,0 +1,66 @@
+{
+  "version": "2.0.0",
+  "updated": "2026-07-23",
+  "projects": [
+    {
+      "slug": "smart-lakarkontakt",
+      "name": "Smart Läkarkontakt",
+      "category": "Kontinuitet",
+      "status": "Pågående utveckling",
+      "statusTone": "success",
+      "statusIcon": "↗",
+      "summary": "Ett innovationsprojekt för strukturerad fördelning till fast läkarkontakt, jämnare arbetsbelastning och stärkt kontinuitet.",
+      "focus": [
+        "Datadriven verksamhetsutveckling",
+        "Digital innovation"
+      ],
+      "currentStage": 4,
+      "parent": null
+    },
+    {
+      "slug": "smart-hypertoni",
+      "name": "Smart Hypertoni",
+      "category": "Kronisk sjukdom",
+      "status": "Projektförberedelse",
+      "statusTone": "warning",
+      "statusIcon": "◆",
+      "summary": "Ett projekt kring behovsstyrd och resurseffektiv uppföljning av hypertoni med tydliga bedömningsunderlag.",
+      "focus": [
+        "Medicinsk kunskap",
+        "Digital innovation"
+      ],
+      "currentStage": 3,
+      "parent": null
+    },
+    {
+      "slug": "smart-forsakringsmedicin",
+      "name": "Smart Försäkringsmedicin",
+      "category": "Försäkringsmedicin",
+      "status": "Utvecklingsområde",
+      "statusTone": "information",
+      "statusIcon": "i",
+      "summary": "Ett mindre paraply för projekt som utvecklar kunskapsbaserade och praktiskt användbara stöd inom försäkringsmedicin.",
+      "focus": [
+        "Medicinsk kunskap",
+        "Datadriven verksamhetsutveckling"
+      ],
+      "currentStage": 2,
+      "parent": null
+    },
+    {
+      "slug": "smart-sjukskrivning",
+      "name": "Smart Sjukskrivning",
+      "category": "Försäkringsmedicin",
+      "status": "Demoversion utvecklas",
+      "statusTone": "warning",
+      "statusIcon": "◆",
+      "summary": "Det första initiativet inom Smart Försäkringsmedicin. En demoversion utvecklas för framtida publicering och utvärdering.",
+      "focus": [
+        "Medicinsk kunskap",
+        "Digital innovation"
+      ],
+      "currentStage": 3,
+      "parent": "Smart Försäkringsmedicin"
+    }
+  ]
+}
