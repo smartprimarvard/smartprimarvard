@@ -1,6 +1,14 @@
 # Versionshistorik
 
-## 2.0.1 – 24 juli 2026
+## 2.0.2 – 24 juli 2026
+
+- Minskat luftutrymmet ovanför hero- och sidhuvudsektioner.
+- Anpassat startsidans hero så att text och bild syns direkt vid sidladdning.
+- Ersatt den tidigare abstrakta illustrationen med den godkända referensbilden av en ek på en kulle.
+- Korrigerat logotypvisningen på sidan ”Varför Smart Primärvård finns”.
+- Säkrat korrekta proportioner för footerlogotypen.
+
+## 2.0.2 – 24 juli 2026
 
 - Minskade huvudrubriken på startsidan för bättre visuell balans.
 - Ersatte projektpanelen i hero-sektionen med en lugn illustration av en ek på en kulle.
