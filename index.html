@@ -3,50 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Smart Primärvård – innovationsplattform för framtidens primärvård.">
-  <title>Smart Primärvård</title>
-  <link rel="stylesheet" href="/smartprimarvard/assets/css/styles.css">
-  <script src="/smartprimarvard/assets/js/main.js" defer></script>
+  <meta name="description" content="Smart Primärvård är en innovations- och kunskapsplattform för framtidens svenska primärvård.">
+  <meta name="theme-color" content="#003B66">
+  <meta name="color-scheme" content="light">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Smart Primärvård | Kunskap, innovation och samverkan">
+  <meta property="og:description" content="Smart Primärvård är en innovations- och kunskapsplattform för framtidens svenska primärvård.">
+  <meta property="og:image" content="https://smartprimarvard.github.io/smartprimarvard/assets/img/logo-horizontal.png">
+  <link rel="canonical" href="https://smartprimarvard.github.io/smartprimarvard/">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/img/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+  <title>Smart Primärvård | Kunskap, innovation och samverkan</title>
 </head>
-<body>
-
+<body class="page-home">
 <a class="skip-link" href="#main">Hoppa till huvudinnehållet</a>
-<header class="site-header">
+<header class="site-header" data-header>
   <div class="header-inner">
-    <a class="brand" href="/smartprimarvard/" aria-label="Smart Primärvård, startsida">
-      <img src="/smartprimarvard/assets/img/smart-primarvard-logo.png" alt="Smart Primärvård – Kunskap, Innovation, Samverkan">
+    <a class="brand" href="index.html" aria-label="Smart Primärvård, startsida">
+      <img src="assets/img/logo-horizontal.png" alt="Smart Primärvård – Kunskap, Innovation, Samverkan" width="1900" height="332">
     </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Meny</button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+      <span class="nav-toggle-icon" aria-hidden="true"></span><span>Meny</span>
+    </button>
     <nav class="site-nav" id="main-nav" aria-label="Huvudnavigation">
-      <a href="/smartprimarvard/">Startsida</a>
-      <a href="/smartprimarvard/om.html">Om plattformen</a>
-      <a href="/smartprimarvard/projekt.html">Projekt</a>
-      <a href="/smartprimarvard/samverkan.html">Samverkan</a>
-      <a href="/smartprimarvard/kontakt.html">Kontakt</a>
+      <a href="index.html" aria-current="page">Start</a>
+<a href="varfor.html">Varför plattformen finns</a>
+<a href="projekt.html">Projekt</a>
+<a href="nyheter.html">Nyheter</a>
+<a href="samverkan.html">Samverkan</a>
+<a href="kontakt.html">Kontakt</a>
     </nav>
   </div>
 </header>
-
 <main id="main">
 
 <section class="hero">
   <div class="hero-inner">
     <div>
       <p class="eyebrow">Kunskap • Innovation • Samverkan</p>
-      <h1>En plattform för framtidens primärvård</h1>
-      <p class="lead">Smart Primärvård samlar idéer, projekt och samarbeten som utvecklar robusta, användarvänliga och långsiktigt hållbara lösningar för primärvården.</p>
+      <h1><span class="hero-quote">Framtidens primärvård utvecklas inte genom fler administrativa lager.</span> <span class="hero-quote-emphasis">Den utvecklas genom bättre kunskap, smartare arbetssätt och modet att pröva nya idéer.</span></h1>
+      <p class="lead">Smart Primärvård är en fristående innovations- och kunskapsplattform som utvecklar, utvärderar och sprider nya arbetssätt för svensk primärvård.</p>
       <div class="actions">
-        <a class="button button-primary" href="/smartprimarvard/projekt.html">Utforska projekten</a>
-        <a class="button button-secondary" href="/smartprimarvard/om.html">Om plattformen</a>
+        <a class="button button-primary" href="varfor.html">Varför plattformen finns <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        <a class="button button-secondary" href="projekt.html">Utforska projekten</a>
       </div>
     </div>
-    <aside class="hero-panel" aria-label="Projektöversikt">
-      <p class="panel-title">Projekt i utveckling</p>
-      <div class="mini-list">
-        <div class="mini-row"><span>Smart Läkarkontakt</span><span class="status-pill">Utveckling</span></div>
-        <div class="mini-row"><span>Smart Hypertoni</span><span class="status-pill">Projektfas</span></div>
-        <div class="mini-row"><span>Smart Sjukskrivning</span><span class="status-pill">Idéfas</span></div>
-      </div>
+    <aside class="hero-panel" aria-labelledby="aktuellt-title">
+      <p class="panel-title" id="aktuellt-title">Aktuellt i plattformen</p>
+      <ul class="current-list">
+        <li><strong>Smart Läkarkontakt</strong><span class="status-badge status-success"><span aria-hidden="true">↗</span><span>Pågående utveckling</span></span></li><li><strong>Smart Hypertoni</strong><span class="status-badge status-warning"><span aria-hidden="true">◆</span><span>Projektförberedelse</span></span></li><li><strong>Smart Försäkringsmedicin</strong><span class="status-badge status-information"><span aria-hidden="true">i</span><span>Utvecklingsområde</span></span></li><li><strong>Smart Sjukskrivning</strong><span class="status-badge status-warning"><span aria-hidden="true">◆</span><span>Demoversion utvecklas</span></span></li>
+      </ul>
     </aside>
   </div>
 </section>
@@ -54,15 +65,33 @@
 <section class="section">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow">Vår grund</p>
-      <h2>Från verkliga behov till hållbara lösningar</h2>
-      <p>Plattformen ska göra det möjligt att utveckla, testa och förvalta nya arbetssätt och digitala stöd utan att publicera omogna funktioner eller känsliga projektdetaljer.</p>
+      <p class="eyebrow">Fyra fokusområden</p>
+      <h2>Kunskap som blir användbar i vardagen</h2>
+      <p class="lead">Plattformen förenar medicinsk kunskap, verksamhetens erfarenheter och digital innovation. Varje projekt ska utgå från ett verkligt behov och kunna följas upp.</p>
     </div>
-    <div class="value-grid">
-      <article class="card"><span class="card-kicker">1</span><h3>Kunskap</h3><p>Praktisk och professionell kunskap från primärvårdens vardag.</p></article>
-      <article class="card"><span class="card-kicker">2</span><h3>Innovation</h3><p>Strukturerad utveckling från idé till testad och användbar lösning.</p></article>
-      <article class="card"><span class="card-kicker">3</span><h3>Samverkan</h3><p>Samarbete mellan vård, akademi, offentlig sektor och andra aktörer.</p></article>
-      <article class="card"><span class="card-kicker">4</span><h3>Kvalitet</h3><p>Säkerhet, enkelhet och långsiktig förvaltning före onödig komplexitet.</p></article>
+    <div class="focus-grid">
+      <article class="focus-card"><div class="focus-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 19V9m5 10V5m5 14v-7m5 7V3"/></svg></div><h3>Datadriven verksamhetsutveckling</h3><p>Beslutsunderlag, analys och kvalitetsuppföljning som hjälper verksamheten att agera.</p></article>
+      <article class="focus-card"><div class="focus-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Digital innovation</h3><p>Utveckling och utvärdering av digitala arbetssätt med enkelhet och säkerhet i fokus.</p></article>
+      <article class="focus-card"><div class="focus-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5.5A3.5 3.5 0 0 1 7.5 2H11v17H7.5A3.5 3.5 0 0 0 4 22V5.5Zm16 0A3.5 3.5 0 0 0 16.5 2H13v17h3.5A3.5 3.5 0 0 1 20 22V5.5Z"/></svg></div><h3>Medicinsk kunskap</h3><p>Evidensnära modeller som stödjer professionens bedömning utan att ersätta den.</p></article>
+      <article class="focus-card"><div class="focus-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="7" r="2.5"/><path d="M2.5 20a5.5 5.5 0 0 1 11 0M13 20a4.5 4.5 0 0 1 9 0"/></svg></div><h3>Samverkan</h3><p>Projekt tillsammans med vårdgivare, akademi, offentlig sektor och teknikpartners.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-subtle">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Från behov till lösning</p>
+      <h2>En gemensam utvecklingsmodell</h2>
+      <p>Alla initiativ följer samma sex steg. Det gör projektstatus begriplig utan att omogna lösningar eller känsliga detaljer behöver publiceras.</p>
+    </div>
+    <div class="process-grid">
+      <article class="process-step"><h3>Idé</h3><p>Ett verkligt behov identifieras.</p></article>
+      <article class="process-step"><h3>Förstudie</h3><p>Behov, risker och möjlig nytta avgränsas.</p></article>
+      <article class="process-step"><h3>Projektansökan</h3><p>Resurser, ansvar och utvärdering planeras.</p></article>
+      <article class="process-step"><h3>Pågående projekt</h3><p>Lösningen utvecklas och testas kontrollerat.</p></article>
+      <article class="process-step"><h3>Utvärdering</h3><p>Nytta, säkerhet och användbarhet följs upp.</p></article>
+      <article class="process-step"><h3>Färdig lösning</h3><p>Publicering sker först när lösningen är redo.</p></article>
     </div>
   </div>
 </section>
@@ -70,61 +99,99 @@
 <section class="section section-soft">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow">Pågående initiativ</p>
-      <h2>Projektportfölj</h2>
-      <p>Varje projekt har en egen sida med en övergripande beskrivning, deltagande aktörer och en tydlig projektstatus. Verktyg publiceras först när de är färdigutvecklade.</p>
+      <p class="eyebrow">Projektportfölj</p>
+      <h2>Konkreta uttryck för samma övergripande idé</h2>
+      <p>Smart Hypertoni, Smart Läkarkontakt och Smart Försäkringsmedicin utvecklas som delar av samma långsiktiga plattform.</p>
     </div>
     <div class="project-grid">
-      <article class="card project-card">
-        <div class="project-meta"><span class="status-pill">Utveckling</span><span class="small">Kontinuitet</span></div>
-        <h3>Smart Läkarkontakt</h3>
-        <p>Ett innovationsprojekt med fokus på strukturerade arbetssätt för fast läkarkontakt och förbättrad kontinuitet.</p>
-        <a class="project-link" href="/smartprimarvard/projekt/smart-lakarkontakt.html">Läs om projektet →</a>
-      </article>
-      <article class="card project-card">
-        <div class="project-meta"><span class="status-pill">Projektfas</span><span class="small">Kronisk sjukdom</span></div>
-        <h3>Smart Hypertoni</h3>
-        <p>Ett projekt som undersöker behovsstyrda och resurseffektiva arbetssätt för uppföljning i primärvården.</p>
-        <a class="project-link" href="/smartprimarvard/projekt/smart-hypertoni.html">Läs om projektet →</a>
-      </article>
-      <article class="card project-card">
-        <div class="project-meta"><span class="status-pill">Idéfas</span><span class="small">Arbetsflöde</span></div>
-        <h3>Smart Sjukskrivning</h3>
-        <p>Ett tidigt innovationsinitiativ kring säkra och användarvänliga stöd för sjukskrivningsprocessen.</p>
-        <a class="project-link" href="/smartprimarvard/projekt/smart-sjukskrivning.html">Läs om projektet →</a>
-      </article>
-    </div>
+<article class="project-card" data-project-card data-category="Kontinuitet">
+  <div class="project-card-top">
+    <span class="project-category">Kontinuitet</span>
+    <span class="status-badge status-success"><span aria-hidden="true">↗</span><span>Pågående utveckling</span></span>
+  </div>
+  
+  <h3>Smart Läkarkontakt</h3>
+  <p>Ett innovationsprojekt för strukturerad fördelning till fast läkarkontakt, jämnare arbetsbelastning och stärkt kontinuitet.</p>
+  <div class="tag-list" aria-label="Fokusområden"><span class="tag">Datadriven verksamhetsutveckling</span><span class="tag">Digital innovation</span></div>
+  <a class="card-link" href="projekt/smart-lakarkontakt.html">Läs om Smart Läkarkontakt <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+</article>
+<article class="project-card" data-project-card data-category="Kronisk sjukdom">
+  <div class="project-card-top">
+    <span class="project-category">Kronisk sjukdom</span>
+    <span class="status-badge status-warning"><span aria-hidden="true">◆</span><span>Projektförberedelse</span></span>
+  </div>
+  
+  <h3>Smart Hypertoni</h3>
+  <p>Ett projekt kring behovsstyrd och resurseffektiv uppföljning av hypertoni med tydliga bedömningsunderlag.</p>
+  <div class="tag-list" aria-label="Fokusområden"><span class="tag">Medicinsk kunskap</span><span class="tag">Digital innovation</span></div>
+  <a class="card-link" href="projekt/smart-hypertoni.html">Läs om Smart Hypertoni <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+</article>
+<article class="project-card" data-project-card data-category="Försäkringsmedicin">
+  <div class="project-card-top">
+    <span class="project-category">Försäkringsmedicin</span>
+    <span class="status-badge status-information"><span aria-hidden="true">i</span><span>Utvecklingsområde</span></span>
+  </div>
+  
+  <h3>Smart Försäkringsmedicin</h3>
+  <p>Ett mindre paraply för projekt som utvecklar kunskapsbaserade och praktiskt användbara stöd inom försäkringsmedicin.</p>
+  <div class="tag-list" aria-label="Fokusområden"><span class="tag">Medicinsk kunskap</span><span class="tag">Datadriven verksamhetsutveckling</span></div>
+  <a class="card-link" href="projekt/smart-forsakringsmedicin.html">Läs om Smart Försäkringsmedicin <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+</article>
+<article class="project-card" data-project-card data-category="Försäkringsmedicin">
+  <div class="project-card-top">
+    <span class="project-category">Försäkringsmedicin</span>
+    <span class="status-badge status-warning"><span aria-hidden="true">◆</span><span>Demoversion utvecklas</span></span>
+  </div>
+  <p class="project-parent">Del av Smart Försäkringsmedicin</p>
+  <h3>Smart Sjukskrivning</h3>
+  <p>Det första initiativet inom Smart Försäkringsmedicin. En demoversion utvecklas för framtida publicering och utvärdering.</p>
+  <div class="tag-list" aria-label="Fokusområden"><span class="tag">Medicinsk kunskap</span><span class="tag">Digital innovation</span></div>
+  <a class="card-link" href="projekt/smart-sjukskrivning.html">Läs om Smart Sjukskrivning <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+</article></div>
+    <div class="actions"><a class="button button-secondary" href="projekt.html">Se hela projektportföljen</a></div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">Princip för publicering</p>
-      <h2>Transparens utan att exponera omogna lösningar</h2>
+    <div class="info-box">
+      <div class="info-box-icon" aria-hidden="true">i</div>
+      <div><h3>Publiceringsprincip</h3><p>Projektbeskrivningar, bekräftade samarbeten och aktuell status kan visas offentligt. Verktyg, funktioner och tekniska detaljer publiceras först när respektive lösning är tillräckligt färdig, säker och utvärderingsbar.</p></div>
     </div>
-    <div class="info-banner">På projektsidorna visas endast generell information, etablerade samarbeten och aktuell projektstatus. Funktioner, tekniska detaljer och verktyg publiceras först när respektive modul är färdigutvecklad och redo för användning.</div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container cta-band">
+    <div><p class="eyebrow">Långsiktigt uppdrag</p><h2>Smart Primärvård är inte ett enskilt projekt.</h2><p>Det är ett långsiktigt arbete för att utveckla svensk primärvård genom medicinsk kunskap, verksamhetsutveckling, digital innovation och samverkan.</p></div>
+    <a class="button button-light" href="samverkan.html">Läs om samverkan</a>
   </div>
 </section>
 
 </main>
-
-<footer class="footer">
+<footer class="site-footer">
   <div class="footer-inner">
-    <div>
-      <img class="footer-logo" src="/smartprimarvard/assets/img/smart-primarvard-logo-inverted.png" alt="Smart Primärvård">
-      <p>En plattform för framtidens primärvård. Kunskap, innovation och samverkan från idé till hållbar lösning.</p>
+    <div class="footer-brand">
+      <img src="assets/img/logo-horizontal-white.png" alt="Smart Primärvård" width="1900" height="332">
+      <p>Kunskap som blir användbar i vardagen. En plattform för framtidens primärvård.</p>
     </div>
     <div>
-      <h3 style="color:white">Navigera</h3>
-      <p><a href="/smartprimarvard/om.html">Om plattformen</a><br>
-      <a href="/smartprimarvard/projekt.html">Projekt</a><br>
-      <a href="/smartprimarvard/samverkan.html">Samverkan</a><br>
-      <a href="/smartprimarvard/kontakt.html">Kontakt</a></p>
+      <h2>Plattformen</h2>
+      <a href="varfor.html">Varför plattformen finns</a>
+      <a href="projekt.html">Projekt</a>
+      <a href="samverkan.html">Samverkan</a>
+    </div>
+    <div>
+      <h2>Information</h2>
+      <a href="integritet.html">Integritet</a>
+      <a href="tillganglighet.html">Tillgänglighet</a>
+      <a href="kontakt.html">Kontakt</a>
     </div>
   </div>
-  <div class="footer-bottom">© <span data-year></span> Smart Primärvård. Prototyp för test och vidareutveckling.</div>
+  <div class="footer-bottom">
+    <span>© <span data-year>2026</span> Smart Primärvård</span>
+    <span>Platform 2.0.0</span>
+  </div>
 </footer>
-
 </body>
 </html>

@@ -1,43 +1,56 @@
-# Smart Primärvård – Platform v1.0
+# Smart Primärvård – Platform 2.0.0
 
-Statisk prototyp för GitHub Pages.
+GitHub Pages-färdig statisk webbplats för Smart Primärvård.
 
 ## Innehåll
-- Publik plattformssida
-- Om plattformen
-- Projektportfölj
-- Samverkanssida
-- Kontaktprototyp
-- Projektsidor för Smart Läkarkontakt, Smart Hypertoni och Smart Sjukskrivning
-- Ingen funktion, testdata eller verktygsmodul är publicerad
 
-## Lägg upp på GitHub
-1. Packa upp zip-filen.
-2. Öppna ditt repository `smartprimarvard`.
-3. Välj **Add file → Upload files**.
-4. Dra in innehållet i den uppackade mappen, inte själva mappen.
-5. Skriv commit-meddelande, exempelvis `Publicera Smart Primärvård Platform v1.0`.
+- Ny startsida med plattformens manifest och fyra fokusområden.
+- Sidan **Varför Smart Primärvård finns** med avsnittet **Hur Smart Primärvård växte fram**.
+- Projektportal med filtrering och gemensam sexstegsmodell.
+- Smart Läkarkontakt, Smart Hypertoni, Smart Försäkringsmedicin och Smart Sjukskrivning.
+- Nyheter, samverkan, kontakt, integritet och tillgänglighet.
+- Responsiv navigation och WCAG 2.2 AA som målnivå.
+- Inga externa JavaScript-bibliotek, analysverktyg eller cookies.
+
+## Publicera genom GitHub Desktop – rekommenderad metod
+
+1. Ladda ned och packa upp `Smart_Primarvard_Platform_v2_0_GitHub.zip`.
+2. Öppna GitHub Desktop och klona repositoryt `smartprimarvard/smartprimarvard` om det inte redan finns lokalt.
+3. Öppna repositorymappen i Finder.
+4. Radera de gamla webbplatsfilerna i mappen, men rör inte den dolda `.git`-mappen.
+5. Kopiera **innehållet** i den uppackade Platform 2.0-mappen till repositorymappen. Kopiera inte den yttre mappen som en extra nivå.
+6. Kontrollera ändringarna i GitHub Desktop.
+7. Skriv commitmeddelandet `Publicera Platform 2.0.0`.
+8. Klicka **Commit to main** och därefter **Push origin**.
+9. GitHub Pages bygger om webbplatsen automatiskt. Kontrollera **Settings → Pages** eller fliken **Actions**.
+
+## Publicera direkt i webbläsaren
+
+1. Packa upp ZIP-filen på datorn.
+2. Öppna repositoryt på GitHub och välj **Add file → Upload files**.
+3. Dra in samtliga filer och mappar från den uppackade mappens innehåll.
+4. GitHub skriver över filer med samma namn och lägger till de nya filerna.
+5. Commitmeddelande: `Publicera Platform 2.0.0`.
 6. Klicka **Commit changes**.
-7. Gå till **Settings → Pages**.
-8. Under **Build and deployment**, välj `Deploy from a branch`.
-9. Välj branch `main` och mapp `/ (root)`.
-10. Klicka **Save**.
 
-Webbplatsen blir normalt tillgänglig på:
-`https://DITT-GITHUB-NAMN.github.io/smartprimarvard/`
+`om.html` finns kvar som en omdirigering till `varfor.html`, så äldre länkar fortsätter att fungera.
 
-## Viktigt
-Länkarna är förberedda för ett repository som heter exakt `smartprimarvard`.
-När den egna domänen kopplas kan sökvägarna senare göras domänneutrala.
+## Förhandsgranska lokalt
 
-## Lokal testning på Mac
-Öppna Terminal i projektmappen och kör:
+Dubbelklicka på `index.html`, eller kör en lokal webbserver i projektmappen:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Öppna sedan:
-`http://localhost:8000`
+Öppna därefter `http://localhost:8000`.
 
-För att länkarna med `/smartprimarvard/` ska fungera lokalt kan du antingen lägga mappen i en överordnad katalog med samma namn eller testa via GitHub Pages.
+## Uppdatera projektdata
+
+Projektmetadata finns i `data/projects.json`. De publika HTML-sidorna är avsiktligt förgenererade så att innehållet fortfarande fungerar utan JavaScript.
+
+## Viktigt före offentlig lansering
+
+- Lägg in fastställda kontaktuppgifter.
+- Kontrollera eventuell anpassning av canonical-URL och sitemap om egen domän kopplas.
+- Publicera inte verktyg eller patientnära funktioner innan de är färdiga, säkra och korrekt avgränsade.
